@@ -8,7 +8,7 @@ O selection sort começa com o elemento na primeira posição de uma matriz não
 
 O algoritmo então segue para o elemento na 2ª posição e varre os elementos subsequentes para encontrar o índice do 2 ° menor elemento. Uma vez encontrado, o segundo menor elemento é trocado pelo elemento da 2ª posição.
 
-Esse processo continua até chegarmos ao n-1º elemento da matriz, que coloca o n-1º menor elemento na n-1ª posição. O último elemento cai automaticamente no lugar, na n-1ª iteração, ordenação assim a matriz.
+Esse processo continua até chegarmos ao n-1 elemento do Array, que coloca o n-1 elemento na menor posição. O último elemento cai automaticamente no lugar, na n-1 iteração, ordenando assim o array.
 
 Encontramos o maior elemento em vez do menor elemento para ordenar o array em ordem decrescente.
 

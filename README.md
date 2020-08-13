@@ -10,9 +10,9 @@ O algoritmo então segue para o elemento na 2ª posição e varre os elementos s
 
 Esse processo continua até chegarmos ao n-1º elemento da matriz, que coloca o n-1º menor elemento na n-1ª posição. O último elemento cai automaticamente no lugar, na n-1ª iteração, ordenação assim a matriz.
 
-Encontramos o maior elemento em vez do menor elemento para classificar a matriz em ordem decrescente.
+Encontramos o maior elemento em vez do menor elemento para ordenar o array em ordem decrescente.
 
-Vamos ver um exemplo de array não classificado e classificá-lo em ordem crescente para entender visualmente o algoritmo.
+Vamos ver um exemplo de array não ordenado e ordena-lo em ordem crescente para entender visualmente o algoritmo.
 
 ### Exemplos:
 

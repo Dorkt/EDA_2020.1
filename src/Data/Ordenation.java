@@ -63,19 +63,20 @@ public class Ordenation {
         mergeSortRecusivo(data, new int[n], 0, n - 1);
         return data;
     }
-    public void selectionSort(int data[], int n) {
+    public int[] selectionSort(int[] data, int n) {
         int numberUnsorted = n;
         int index;
-        int max;
+        int min;
         while (numberUnsorted > 0) {
             // determinando o valor maior no array
-            max = 0;
+            min = 0;
             for (index = 1; index < numberUnsorted; index++) {
-                if (data[max] < data[index]) max = index;
+                if (data[min] < data[index]) min = index;
             }
-            swap(data, max, numberUnsorted -1);
+            swap(data, min, numberUnsorted -1);
             numberUnsorted--;
         }
+        return data;
     }
     public void swap(@NotNull int data[], int first_index, int second_index) {
         int smallestNumber = data[first_index];

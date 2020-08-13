@@ -6,6 +6,7 @@ import java.io.IOException;
 import Data.Factorial;
 import Data.Ordenation;
 public class FactorialTest {
+    final Ordenation ordenation = new Ordenation();
     @Test
     public void TestaResultadoDoFatorial() throws IOException {
         Factorial factorial = new Factorial();
@@ -16,7 +17,6 @@ public class FactorialTest {
 
     @Test
     public void TestaOrdenacaoInsertion() throws  IOException {
-        Ordenation ordenation = new Ordenation();
         int [] expected = { 2, 4, 5, 8, 9, 15};
         int array[] = {5, 8, 15, 2, 4, 9};
         Assertions.assertArrayEquals(expected, ordenation.insertionSort(array, array.length));
@@ -24,6 +24,17 @@ public class FactorialTest {
         for (int itens : newArray) {
             System.out.printf(" %d ", itens);
         }
+    }
+    @Test
+    public void TesteInsertionSort() throws IOException {
+        int [] expected = {2, 4, 5, 8, 9, 15};
+        int [] actual = {5, 8, 15, 2, 4, 9};
+        Assertions.assertArrayEquals(expected, ordenation.selectionSort(actual, actual.length));
+        int newArray[] = ordenation.selectionSort(actual, actual.length);
+        for (int itens : newArray) {
+            System.out.printf(" %d ", itens);
+        }
+
     }
     @Test
     public void TesteMergeSort () throws IOException{
